@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conversor de Temperatura</title>
+
+    <!-- Fuente futurista -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Archivo de style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Archivo js -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="contenedor">
+        <section class="caja-conversor">
+
+    
+            <h1>Conversor de temperatura</h1>
+
+            <p class="descripcion">
+                Convierte grados Celsius a Kelvin y Fahrenheit.
+            </p>
+
+            <form id="formulario">
+                <label for="celsius">Ingresa los grados Celsius</label>
+
+                <input
+                    type="text"
+                    id="celsius"
+                    name="celsius"
+                    step="any"
+                    placeholder="Ejemplo: 45"
+                    required
+                >
+
+                <button type="submit" id="convertir">
+                    CONVERTIR TEMPERATURA
+                </button>
+            </form>
+
+            <p id="error" class="error" role="alert"></p>
+
+            <div class="resultados">
+                <div class="resultado">
+                    <p>Kelvin</p>
+                    <h2 id="kelvin">---</h2>
+                    <span> ºK </span>
+                </div>
+
+                <div class="resultado">
+                    <p>Fahrenheit</p>
+                    <h2 id="fahrenheit">---</h2>
+                    <span> °F </span>
+                </div>
+            </div>
+
+            <p class="pie">
+               Nayant González . Generation 2026
+            </p>
+
+        </section>
+    </main>
+
+</body>
+</html>
